@@ -2,18 +2,11 @@
 // 1. Masukkan (include) file class Mahasiswa.
 require_once 'Mahasiswa.php';
 
-// 2. Instansiasi Objek (Menciptakan objek nyata dari blueprint Mahasiswa)
-$mhs1 = new Mahasiswa();
-
-// 3. Mengisi Properti Objek (Mengakses data di dalam objek)
-$mhs1->nama = "Andi Pratama";
-$mhs1->nim = "2023005";
-
-// 4. Membuat objek kedua (optional, untuk menunjukkan setiap objek unik)
-$mhs2 = new Mahasiswa();
-$mhs2->nama = "Sinta Dewi";
-$mhs2->nim = "2023006";
+// 2. Instansiasi objek langsung menggunakan constructor
+$mhs1 = new Mahasiswa("Andi Pratama", "2023005");
+$mhs2 = new Mahasiswa("Sinta Dewi", "2023006");
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 

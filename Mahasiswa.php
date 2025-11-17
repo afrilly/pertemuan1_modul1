@@ -11,6 +11,12 @@
 
         public $nim;
 
+        // Constructor → otomatis dijalankan saat objek dibuat
+    public function __construct($nama, $nim)
+    {
+        $this->nama = $nama;
+        $this->nim  = $nim;
+    }
         /**
          * Metode (Method) - Perilaku yang dapat dilakukan objek
          * Menampilkan salam sapaan.
